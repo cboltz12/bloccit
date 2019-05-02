@@ -13,6 +13,11 @@ group :production do
  group :development do
    gem 'sqlite3'
  end
+
+ group :development, :test do
+   gem 'rspec-rails', '~> 3.0'
+   gem 'rails-controller-testing'
+ end
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
