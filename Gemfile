@@ -10,10 +10,14 @@ group :production do
    gem 'pg'
  end
 
- group :development do
+group :development do
    gem 'sqlite3'
  end
 # Use sqlite3 as the database for Active Record
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rails-controller-testing'
+end
 
 
 
